@@ -1,0 +1,10 @@
+{
+  "properties": [
+    {
+      "name": "spring.redis.open",
+      "type": "java.lang.String",
+      "description": "自定义属性，表示是否打开Redis缓存支持.",
+      "defaultValue": false
+    }
+  ]
+}
