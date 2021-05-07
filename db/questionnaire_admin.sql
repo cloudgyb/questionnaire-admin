@@ -60,6 +60,8 @@ INSERT INTO `sys_config`
 VALUES (2, 'system_name', '问卷Online后台管理系统', 1, '系统名称配置信息');
 INSERT INTO `sys_config`
 VALUES (3, 'system_version', 'v1.0.0', 1, '系统当前版本');
+INSERT INTO `sys_config`
+VALUES (4, 'system_copyright', '&copy cloudgyb.版权所有.', 1, '系统版权信息');
 
 -- ----------------------------
 -- Table structure for sys_log
