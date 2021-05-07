@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -85,5 +86,16 @@ public class SysConfigService extends ServiceImpl<SysConfigDao, SysConfigEntity>
         } catch (Exception e) {
             throw new RRException("获取参数失败");
         }
+    }
+
+    public Map<String,String> getSystemConfig(){
+        String systemName = getValue("system_name");
+        String systemVersion = getValue("system_version");
+        String systemCopyright = getValue("system_copyright");
+        Map<String,String> map = new HashMap<>();
+        map.put("systemName", systemName);
+        map.put("systemVersion", systemVersion);
+        map.put("systemCopyright", systemCopyright);
+        return map;
     }
 }
